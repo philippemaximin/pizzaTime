@@ -1,0 +1,310 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+body {
+    background-color: #fceeed;
+    position: relative;
+}
+
+
+    body div#conteneur_global {
+        z-index: 1;
+        margin: auto;
+        width: 70%;
+        position: relative;
+        top: 10em;
+        background-color: white;
+        border-radius: 40px;
+    }
+
+        /* Logo */
+        body div#conteneur_global > header {
+            display: flex;
+            padding: 2em 3em 1em 3em;
+        }
+
+        body div#conteneur_global header section div::before{
+            content: url("../img/logo.svg");
+            position:relative; 
+            width: 2rem;
+        }
+
+            body div#conteneur_global header section div > span{
+                position:relative; 
+                top: -22px;
+                left: -10px;
+            }
+
+
+        /* Menu */
+        body div#conteneur_global header section nav{
+            position:absolute; 
+            right: 3em;
+        }
+
+            body div#conteneur_global header section nav ul li{
+                text-decoration: none;
+                display: inline-block;
+            }
+
+                body div#conteneur_global header section nav ul a{
+                    text-decoration: none;
+                    color: black;
+                }
+
+                    body div#conteneur_global header section nav ul a:hover{
+                        text-decoration: none;
+                        color: red;
+                    }
+
+                body div#conteneur_global header section nav ul li{
+                    padding: 0 0.5rem;
+                }
+
+                body div#conteneur_global header section nav ul li#recherche::before{
+                    content: url("../img/search.svg");
+                    position: relative;
+                    top: 5px;
+                }
+
+                body div#conteneur_global header section nav ul li#panier::before{
+                    content: url("../img/cart.svg");
+                    position: relative;
+                    top: 5px;
+                }
+
+
+                body div#conteneur_global header section nav ul li > button{
+                    color: white;
+                    background-color: red;
+                    border-radius: 40px;
+                    border: 0;
+                    padding: 1em 2em;
+                    text-align: center;
+                    text-transform: uppercase;
+                    position: relative;
+                    top: -5px;
+                }
+
+
+        /* Banniere */
+        div#conteneur_global section#banner{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1em;
+            height: 29em;
+        }
+
+            div#conteneur_global section#banner > div#banner_img{
+                background: linear-gradient(to left, transparent, white),url("/PizzaIntegration/src/img/margherita-pizza\ 2.jpg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 50%;
+                padding: 0;
+            }
+
+            div#conteneur_global section#banner > div {
+                padding-left: 3em;
+                padding-top: 6em;
+            }
+
+                div#conteneur_global section#banner > div h1 {
+                    font-size: 3em;
+                    font-weight: bold;
+                    margin: 0 0 0.2em 0;
+                    line-height: 1.3;
+                }
+
+                div#conteneur_global section#banner > div h2 {
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    margin: 0 0 0.8em 0;
+                    line-height: 1.3;
+                }
+
+                div#conteneur_global section#banner > div button {
+                    color: white;
+                    background-color: red;
+                    box-shadow: -1em 1em 3em #fcc7c7;
+                    border-radius: 40px;
+                    border: 0;
+                    padding: 1em 2em;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            
+        /* Corps du site */
+        #bodyCentral {
+            margin: 1em 0 2em 0;
+        }
+
+            #bodyCentral > h2 {
+                font-size: 1.5em;
+                font-weight: bold;
+                margin: 0 0 0.8em 0;
+                line-height: 1.3;
+                text-align: center;
+            }
+
+            #bodyCentral div nav  {
+                margin: 1em 10em;
+            }
+
+            #bodyCentral div nav ul {
+                display: flex;
+            }
+
+                #bodyCentral div nav ul li  {
+                    border: 1px solid grey;
+                    text-align: center;
+                    margin: 0 2em;
+                    width: 30%;
+                    padding: 1em;
+                    border-radius: 11em 11em 2em 2em;
+                }
+
+                    #bodyCentral div nav ul li:hover  {
+                        box-shadow: -1em 1em 2em #bfbfbf;
+                    }
+
+                    #bodyCentral div nav ul li .fit_img {
+                        display: block;
+                        overflow: hidden;
+                        margin-bottom: 1em;
+                    }
+
+                    #bodyCentral div nav ul li .fit_img > img {
+                        width: 70%;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                    
+
+                    #bodyCentral div nav ul li h3 {
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        margin-bottom: 0.5em;
+                        text-transform: capitalize;
+                    }
+
+                    #bodyCentral div nav ul li p {
+                        /* width: 90%; */
+                        margin: 0 auto;
+                        color: grey;
+                        font-size: 0.8em;
+                    }
+
+                    #bodyCentral div nav ul li h2 {
+                        color: green;
+                        font-size: 1.1em;
+                        font-weight: bold;
+                        margin : 1em 0;
+                    }
+
+
+                    #bodyCentral div nav ul li div.selectbox {
+                        display: block;
+                        overflow:hidden;
+                        border:1px solid #cccccc;
+                        border-radius:36px;
+                    }
+
+                        #bodyCentral div nav ul li div.selectbox select {
+                            margin: 0 auto;
+                            width: 100%;
+                            outline:none;
+                            border:0px;
+                            outline: none;
+                        }
+
+                    #bodyCentral div nav ul li button {
+                        color: white;
+                        background-color: red;
+                        border-radius: 40px;
+                        border: 0;
+                        padding: 1em 2em;
+                        margin-top: 1em;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                    
+footer#page{
+    display: block;
+    height: 4em;
+}
+
+
+footer#endFooter{
+    display: block;
+    position: relative;
+    top: 10em;
+    height: 10em;
+}
+                    
+    
+/* Decoration */
+#decoration {
+}
+
+#petiteFeuilleHaut {
+    content: url(/PizzaIntegration/src/img/Mask\ Group.png);
+    z-index: 2;
+    position: absolute;
+    width: 4em;
+    left: 50%;
+    top: -2em;
+}
+
+#petiteFeuilleGauche {
+    content: url(/PizzaIntegration/src/img/Mask\ Group\ \(1\).png);
+    z-index: 2;
+    position: absolute;
+    left: -15%;
+    top: 44.2em;
+}
+
+#petiteFeuilleGauche {
+    content: url(/PizzaIntegration/src/img/Mask\ Group\ \(1\).png);
+    z-index: 2;
+    position: absolute;
+    left: -10%;
+    top: 55%;
+    width: 15em;
+}
+
+#petiteFeuilleBas {
+    content: url(/PizzaIntegration/src/img/Mask\ Group\ \(3\).png);
+    z-index: 2;
+    position: absolute;
+    left: 100%;
+    top: 100%;
+    width: 15em;
+}
+
+#petiteTomateGauche {
+    content: url(/PizzaIntegration/src/img/Mask\ Group\ \(2\).png);
+    z-index: -1;
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    width: 15em;
+}
+
+#petiteTomateDroite {
+    content: url(/PizzaIntegration/src/img/Mask\ Group\ \(4\).png);
+    z-index: 2;
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    width: 15em;
+}
