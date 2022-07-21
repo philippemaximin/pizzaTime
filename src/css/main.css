@@ -106,7 +106,7 @@ body {
         }
 
             div#conteneur_global section#banner > div#banner_img{
-                background: linear-gradient(to left, transparent, white),url("/PizzaIntegration/src/img/margherita-pizza\ 2.jpg");
+                background: linear-gradient(to left, transparent, white),url("../img/margherita-pizza\ 2.jpg");
                 background-size: contain;
                 background-repeat: no-repeat;
                 width: 50%;
@@ -257,7 +257,7 @@ footer#endFooter{
 }
 
 #petiteFeuilleHaut {
-    content: url(/PizzaIntegration/src/img/Mask\ Group.png);
+    content: url("../img/Mask\ Group.png");
     z-index: 2;
     position: absolute;
     width: 4em;
@@ -266,7 +266,7 @@ footer#endFooter{
 }
 
 #petiteFeuilleGauche {
-    content: url(/PizzaIntegration/src/img/Mask\ Group\ \(1\).png);
+    content: url("../img/Mask\ Group\ \(1\).png");
     z-index: 2;
     position: absolute;
     left: -15%;
@@ -274,7 +274,7 @@ footer#endFooter{
 }
 
 #petiteFeuilleGauche {
-    content: url(/PizzaIntegration/src/img/Mask\ Group\ \(1\).png);
+    content: url("../img/Mask\ Group\ \(1\).png");
     z-index: 2;
     position: absolute;
     left: -10%;
@@ -283,7 +283,7 @@ footer#endFooter{
 }
 
 #petiteFeuilleBas {
-    content: url(/PizzaIntegration/src/img/Mask\ Group\ \(3\).png);
+    content: url("../img/Mask\ Group\ \(3\).png");
     z-index: 2;
     position: absolute;
     left: 100%;
@@ -292,7 +292,7 @@ footer#endFooter{
 }
 
 #petiteTomateGauche {
-    content: url(/PizzaIntegration/src/img/Mask\ Group\ \(2\).png);
+    content: url("../img/Mask\ Group\ \(2\).png");
     z-index: -1;
     position: absolute;
     left: 10%;
@@ -301,7 +301,7 @@ footer#endFooter{
 }
 
 #petiteTomateDroite {
-    content: url(/PizzaIntegration/src/img/Mask\ Group\ \(4\).png);
+    content: url("../img/Mask\ Group\ \(4\).png");
     z-index: 2;
     position: absolute;
     left: 80%;
